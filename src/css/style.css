@@ -132,7 +132,7 @@ a:last-child{
 }
 .content__head_fourth-sect{
   text-align: center;
-  color: var(--color-text-black);
+  color: var(--color-dark);
   margin-bottom: 10px;
 }
 .content__description{
@@ -192,6 +192,7 @@ a:last-child{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .third-section{
@@ -221,6 +222,7 @@ a:last-child{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card{
@@ -252,4 +254,20 @@ a:last-child{
 .card img{
   width: 175px;
   height: 175px;
+}
+
+
+.footer-section{
+  height: 125px;
+  background-color: var(--color-top-sect);
+  display: flex;
+  align-items: center;
+}
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__icons{
+  width: 243px;
 }
