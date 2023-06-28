@@ -396,10 +396,25 @@ h2 {
     width: 129px;
   }
   .top-main__hamburger {
+    opacity: 0;
     display: block;
   }
   .navigate__nav-menu {
-    display: none;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    height: 250px;
+    width: 50%;
+    padding: 7px 0px;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(
+      90deg,
+      rgba(44, 185, 114, 0) 0%,
+      rgba(45, 179, 112, 1) 100%
+    );
+    transition: 575ms;
   }
   .top-main__section {
     height: 95%;
@@ -546,4 +561,13 @@ h2 {
   .content__description_other {
     font-size: 20px;
   }
+}
+
+.active-hambrg {
+  opacity: 1;
+  transition: 575ms;
+}
+.active-nav {
+  top: 0;
+  transition: 575ms;
 }
